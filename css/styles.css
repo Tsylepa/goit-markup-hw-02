@@ -99,7 +99,8 @@ body {
     letter-spacing: 0.03em;
 }
 
-.features-title {
+.features-title,
+.projects-title {
     display: none;
 }
 
@@ -173,14 +174,14 @@ body {
     background-color: var(--accent);
 }
 
-.projects h2 {
+.projects .projects-company {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--secondary-color); 
 }
 
-.projects p {
+.projects .projects-type {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
