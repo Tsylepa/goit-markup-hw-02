@@ -5,8 +5,7 @@
 }
 
 body {
-    font-family: Roboto;
-    font-weight: 400;
+    font-family: Roboto, sans-serif;
     color: var(--primary-color);
 }
 
@@ -23,8 +22,10 @@ body {
 }
 
 .button {
+    font: inherit;
     border: none;
     color: #FFFFFF;
+    cursor: pointer;
 }
 
 /* Header */
@@ -60,7 +61,9 @@ body {
 .pages-item .link:hover,
 .pages-item .link:focus,
 .contacts .link:hover,
-.contacts .link:focus {
+.contacts .link:focus,
+.address .link:hover,
+.address .link:focus {
     color: var(--accent);
 }
 
@@ -137,9 +140,9 @@ body {
 
 /* Footer */
 
-/* .footer {
+footer {
     background-color: #2F303A;
-} */
+}
 
 .address {
     font-style: normal;
@@ -166,10 +169,11 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--secondary-color);
-    cursor: pointer;
 }
 
-.filter-list .button.active {
+.filter-list .button.active,
+.filter-list .button:hover,
+.filter-list .button:focus {
     color: #FFFFFF;
     background-color: var(--accent);
 }
